@@ -2,35 +2,31 @@
     @extend %list;
     @extend %flex;
     margin-left: auto;
-}
 
-.contacts-head__item {
-    &:first-child {
-        margin-right: 50px;
+    &__item:first-child {
+            margin-right: 50px;
     }
-
-}
-
-.contacts-head__link {
-    @extend %flex;
-    color: $greyText;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    &:hover {
-        color: $blue;
+    
+    &__link {
+        @extend %flex;
+        color: $greyText;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        &:hover, &:focus {
+            color: $blue;
+        }
     }
-    &:focus {
-        color: $blue;
+    
+    &__icon {
+        fill: currentColor;
+        margin-right: 10px;
     }
+    
 }
 
-.contacts-head__icon {
-    fill: currentColor;
-    margin-right: 10px;
-}

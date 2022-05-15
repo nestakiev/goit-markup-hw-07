@@ -1,49 +1,49 @@
 .clients {
     padding: 94px 0;
-}
 
-.clients__container {
-    @extend %container;
-}
-
-.clients__title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: $blackText;
-    margin: 0px 0px 50px;
-}
-
-.clients__list {
-    @extend %list;
-    @extend %flex-center;
-}
-
-.clients__item {
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
+    &__container {
+        @extend %container;
+    }
+    
+    &__title {
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: $blackText;
+        margin: 0px 0px 50px;
+    }
+    
+    &__list {
+        @extend %list;
+        @extend %flex-center;
+    }
+    
+    &__item {
+        margin-right: 30px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__link {
+        @extend %flex-center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $svgGrey;
+        border-radius: 4px;
+        color: $svgGrey;
+        transition: color 250ms $cubic,
+        border 250ms $cubic;
+    
+        &:hover, &:focus {
+            border: 1px solid $blue;
+            color: $blue;
+        }
+    }
+    
+    &__icon {
+        fill: currentColor;
     }
 }
 
-.clients__link {
-    @extend %flex-center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid $svgGrey;
-    border-radius: 4px;
-    color: $svgGrey;
-    transition: color 250ms $cubic,
-    border 250ms $cubic;
-
-    &:hover,
-    &:focus {
-        border: 1px solid $blue;
-        color: $blue;
-    }
-}
-
-.clients__icon {
-    fill: currentColor;
-}

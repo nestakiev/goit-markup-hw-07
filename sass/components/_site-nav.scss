@@ -1,20 +1,22 @@
 .site-nav {
     @extend %flex;
-}
 
-.site-nav__list {
-    @extend %list;
-    @extend %flex;
-    margin-left: 93px;
-}
-
-.site-nav__item {
-    margin-right: 50px;
-
-    &:last-child {
-        margin-right: 0;
+    &__list {
+        @extend %list;
+        @extend %flex;
+        margin-left: 93px;
+    }
+    
+    &__item {
+        margin-right: 50px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
+
+
 
 .site-nav__link {
     color: $blackText;

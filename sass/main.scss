@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./base/normalize";
 @import "./utils/placeholders";
-@import "./utils/mixins";
 @import "./base/body";
 @import "./components/page-header";
 @import "./components/site-nav";
@@ -19,3 +18,7 @@
 @import "./components/footer";
 @import "./components/social-join";
 @import "./components/_join-form";
+@import "./components/portfolio-box";
+@import "./components/filter";
+@import "./components/workset";
+

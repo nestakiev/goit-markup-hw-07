@@ -1,8 +1,9 @@
 .page-header {
     border-bottom: 1px solid $borderHeader;
+
+    &__container {
+        @extend %container;
+        @extend %flex;
+    }
 }
 
-.page-header__container {
-    @extend %container;
-    @extend %flex;
-}
