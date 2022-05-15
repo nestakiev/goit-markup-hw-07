@@ -1,0 +1,36 @@
+.address {
+    width: 231px;
+}
+
+.address__box {
+    font-style: normal;
+}
+
+.address__physical {
+    display: inline-block;
+    color: $whiteText;
+    margin: 0 0 9px;
+}
+
+.address__list {
+    @extend %list;
+}
+
+.address__item {
+    
+    &:first-child {
+        margin-bottom: 9px;
+    }    
+}
+
+.address__link {
+    color: $greyTextFooter;    
+    text-decoration: none;
+    
+    transition: color 250ms $cubic;
+
+    &:hover, &:focus {
+        color: $blue;
+    }
+
+}

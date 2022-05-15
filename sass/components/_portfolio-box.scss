@@ -1,0 +1,7 @@
+.portfolio-box {
+    padding: 94px 0;
+}
+
+.portfolio-box__container {
+    @extend %container;
+}

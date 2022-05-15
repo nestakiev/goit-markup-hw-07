@@ -1,0 +1,47 @@
+.join-form {
+    margin-left: 93px;
+}
+
+.join-form__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $whiteText;
+    margin: 0 0 20px;
+}
+
+.join-form__form {
+    display: flex;
+}
+
+.join-form__label {
+    display: inline-block;
+}
+
+.join-form__input {
+    display: inline-block;
+    padding-left: 12px;
+    width: 358px;
+    height: 50px;
+    background-color: $darkGrey;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;    
+    font-size: 16px;
+    line-height: 1.25;
+    color: $greyTextFooter;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: $greyTextFooter;
+        }
+
+        &:focus-within {
+            outline: none;
+        }
+}
+
+.join-form__icon-btn {
+    margin-left: 10px;
+}

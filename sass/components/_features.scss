@@ -1,0 +1,41 @@
+.features {
+    padding: 94px 0 47px;
+}
+
+.features__container {
+    @extend %container;
+}
+
+.features__list {
+    @extend %list;
+    display: flex;
+}
+
+.features__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.features__box-logo {
+    @extend %flex-center;
+    height: 120px;
+    background-color: $greyBcg;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $blackText;
+    margin: 0px 0px 10px;
+}
+
+.features__text {
+    margin: 0px;
+}
